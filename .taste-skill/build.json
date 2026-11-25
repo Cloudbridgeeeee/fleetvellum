@@ -1,0 +1,11 @@
+{
+ "page": "dist/index.html",
+ "dir": "/home/user/fleetvellum",
+ "kind": "software",
+ "start": "2026-11-25T07:57:16.330Z",
+ "by": "start.mjs",
+ "url": null,
+ "root": "dist",
+ "category": "fleet cost tracking",
+ "primary": "Request a pilot"
+}

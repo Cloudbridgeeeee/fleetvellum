@@ -1,0 +1,25 @@
+{
+ "palettes": [
+  "cool-grey-cobalt"
+ ],
+ "types": [
+  "funnel"
+ ],
+ "dealt": [
+  "funnel",
+  "manrope",
+  "geist"
+ ],
+ "moments": [
+  {
+   "id": "counter-rolls",
+   "at": "2026-11-25T07:57:16.468Z",
+   "seed": "8f4b61af"
+  },
+  {
+   "id": "liquid-type",
+   "at": "2026-11-25T07:57:16.539Z",
+   "seed": "015df44f"
+  }
+ ]
+}

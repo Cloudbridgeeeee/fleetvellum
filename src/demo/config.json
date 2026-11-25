@@ -1,0 +1,187 @@
+{
+  "name": "FleetVellum",
+  "primary": "Request a pilot",
+  "accent": "#1f2de6",
+  "ink": "#0b0c0e",
+  "bg": "#eef0f3",
+  "surface": "#e2e5ea",
+  "fontLink": "<link href=\"https://fonts.googleapis.com/css2?family=Funnel+Display:wght@400..700&family=Funnel+Sans:wght@400..600&family=DM+Mono:wght@400;500&display=swap\" rel=\"stylesheet\">",
+  "fontDisplay": "\"Funnel Display\", system-ui, sans-serif",
+  "fontText": "\"Funnel Sans\", system-ui, sans-serif",
+  "client": "Apapa haulage fleet",
+  "note": "A fixed fleet of 120 vehicles. Results here come from fixed data in your browser; no AI service is called.",
+  "tabs": {
+    "overview": "Fleet",
+    "records": "Vehicles",
+    "queue": "Alerts to review"
+  },
+  "overview": {
+    "title": "Apapa fleet costs, October",
+    "kpis": [
+      [
+        "Vehicles",
+        "120"
+      ],
+      [
+        "Invoices read",
+        "312"
+      ],
+      [
+        "Over budget",
+        "9"
+      ],
+      [
+        "Open alerts",
+        "4"
+      ]
+    ],
+    "chart": {
+      "title": "Cost per km by vehicle class, naira",
+      "labels": [
+        "30t",
+        "15t",
+        "Tanker",
+        "Van",
+        "Pickup",
+        "Bus",
+        "Flatbed",
+        "Tipper"
+      ],
+      "values": [
+        431,
+        366,
+        497,
+        288,
+        241,
+        352,
+        419,
+        512
+      ],
+      "threshold": 450,
+      "thresholdLabel": "Budget ₦450",
+      "caption": "Classes above the line get reviewed first."
+    }
+  },
+  "records": {
+    "title": "Vehicles",
+    "searchHint": "Plate or class",
+    "statusCol": 3,
+    "columns": [
+      "Plate",
+      "Class",
+      "Kilometres",
+      "Status",
+      "Cost per km",
+      "Next step"
+    ],
+    "tones": {
+      "Over": "bad",
+      "Watch": "warn",
+      "On budget": "good"
+    },
+    "rows": [
+      [
+        "LAG 552 AB",
+        "30-tonne truck",
+        "7,140",
+        "Over",
+        "₦538",
+        "Alert to review"
+      ],
+      [
+        "LAG 903 EE",
+        "Tanker",
+        "6,920",
+        "Watch",
+        "₦497",
+        "Alert to review"
+      ],
+      [
+        "KRD 118 XA",
+        "15-tonne truck",
+        "8,305",
+        "On budget",
+        "₦366",
+        "Mileage alert"
+      ],
+      [
+        "LAG 214 KJ",
+        "30-tonne truck",
+        "9,820",
+        "On budget",
+        "₦412",
+        "None"
+      ],
+      [
+        "APP 771 GL",
+        "30-tonne truck",
+        "10,110",
+        "On budget",
+        "₦401",
+        "Service Nov 20"
+      ],
+      [
+        "LAG 330 TF",
+        "Van",
+        "4,480",
+        "On budget",
+        "₦288",
+        "None"
+      ],
+      [
+        "EKY 402 TP",
+        "Tipper",
+        "5,210",
+        "Over",
+        "₦571",
+        "Repair review"
+      ],
+      [
+        "LAG 618 BC",
+        "Flatbed",
+        "7,760",
+        "Watch",
+        "₦446",
+        "Tyres due"
+      ],
+      [
+        "ABJ 225 RK",
+        "Bus",
+        "6,050",
+        "On budget",
+        "₦352",
+        "None"
+      ]
+    ]
+  },
+  "queue": {
+    "title": "Alerts waiting for a fleet manager",
+    "lead": "Each alert shows the invoice and the record it disagrees with. No payment is held or approved automatically.",
+    "items": [
+      {
+        "id": "fuel",
+        "title": "LAG 903 EE: 1,020 litres on a 900-litre tank",
+        "detail": "Diesel invoice, Total Apapa, Nov 4.",
+        "reason": "The fill is 120 litres more than the tank holds."
+      },
+      {
+        "id": "gearbox",
+        "title": "LAG 552 AB: gearbox repair billed twice",
+        "detail": "Ikeja garage, Nov 7 and Nov 9, ₦880,000 each.",
+        "reason": "Same job number and amount on two invoices."
+      },
+      {
+        "id": "odo",
+        "title": "KRD 118 XA: 1,400 km missing from mileage",
+        "detail": "Tracker export, Oct 14 to Oct 18.",
+        "reason": "Fuel bought on those days but no distance recorded."
+      },
+      {
+        "id": "tipper",
+        "title": "EKY 402 TP: cost per km 27% above budget",
+        "detail": "Tipper class, October.",
+        "reason": "Three repair invoices in one month on the hydraulics."
+      }
+    ]
+  }
+}
